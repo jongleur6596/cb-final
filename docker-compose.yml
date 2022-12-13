@@ -1,0 +1,17 @@
+version: "1.0"
+services:
+  majorservice:
+    build: ./majorservice
+    image: jongleur/majorService:latest
+    container_name: majorService
+    ports:
+      - 28080:28080
+    
+
+  studentservice:
+    build: ./studentservice
+    image: artchoi0g/studentservice:latest
+    container_name: studentservice
+    ports:
+      - 28081:28081
+ 
